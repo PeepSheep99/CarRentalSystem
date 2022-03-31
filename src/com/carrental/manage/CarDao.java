@@ -121,7 +121,7 @@ public class CarDao {
 			Connection connect = ConnectionClass.create();
 
 			// Query
-			String query = "Insert into carInventory c(c.\"carType\",c.\"carCount\",c.\"carModel\",c.\"carCostPerDay\") values(?,?,?,?)";
+			String query = "Insert into carInventory (carType,carCount,carModel,carCostPerDay) values(?,?,?,?)";
 
 			// Prepared Statement
 			PreparedStatement pstm = connect.prepareStatement(query);
